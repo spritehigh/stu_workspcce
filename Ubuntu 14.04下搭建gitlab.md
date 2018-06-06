@@ -1,4 +1,4 @@
-#Ubuntu14.04下搭建gitlab
+﻿#Ubuntu14.04下搭建gitlab
 
 ##搭建前环境准备
 1.Ubuntu14.04 64位系统   
@@ -75,7 +75,7 @@ gitlab: It looks like GitLab has not been configured yet; skipping the upgrade s
 
 
 ####在浏览器访问gitlab主机名    
-我配置的主机IP是192.168.100.34，我配置的gitlab服务器的名字是localhost,在浏览器中输入192.168.100.34或者http://localhost，出现如图7所示的界面。初始的登录名是root，初始登录密码是5iveL!fe，进入之后会提示你重新修改密码。至此，gitlab在Ubuntu 14.04上的配置已经结束。     
+我配置的主机IP是192.168.100.34，我配置的gitlab服务器的名字是localhost,在浏览器中输入192.168.100.34或者http://localhost，出现如图7所示的界面。初始的登录名是root，初始登录密码是5iveL!fe，进入之后会提示你重新修改密码。至此，gitlab在Ubuntu 14.04上的配置已经over。     
 ![](https://i.imgur.com/JsD5FrE.png)
 
 
