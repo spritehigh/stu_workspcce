@@ -1,0 +1,58 @@
+ ubuntu 安装sublime并激活
+
+1:add-apt-repository ppa:webupd8team/sublime-text-3
+加载sublime的源
+2:sudo apt-get update
+更新源
+3:sudo apt-get install sublime-text-installer
+安装sublime
+4:ctrl+～
+然后在控制台中输入下面的代码，安装工具包
+import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
+
+5:安装插件
+ctrl+shift+p
+install package
+
+BracketHighlighter 高亮显示匹配的括号、引号和标签。能在左侧高亮显示匹配的括号、引号和标签
+Alignment:按Ctrl+Alt+A，可以将凌乱的代码以等号为准左右对其，适合有代码洁癖的朋友。如果键位冲突，可以通过修改key-binding，改快捷键。
+TrailingSpaces 高亮显示多余的空格和Tab，有时候在代码结尾打多了几个空格或Tab，一般不会察觉，TrailingSpacer这款插件能高亮显示多余的空格和Tab，并可以一键删除它们，有代码洁癖的朋友应该会喜欢这个插件。
+
+注意，插件缺少了一个设置快捷键的文件，可以在/home/yourname/.config/sublime-text-3/Packages中，新建一个名字为TrailingSpaces的文件夹，在里面新建一个名字和后缀为Default (Linux).sublime-keymap的文件，添加以下代码，即可设置“删除多余空格”和“是否开启TrailingSpac
+
+[
+{ "keys":["ctrl+alt+d"], "command":"delete_trailing_spaces"},
+{ "keys":["ctrl+alt+o"], "command":"toggle_trailing_spaces"}
+]
+
+ 
+
+ 
+
+
+6:注册
+—– BEGIN LICENSE —–
+
+Michael Barnes
+
+Single User License
+
+EA7E-821385
+
+8A353C41 872A0D5C DF9B2950 AFF6F667
+
+C458EA6D 8EA3C286 98D1D650 131A97AB
+
+AA919AEC EF20E143 B361B1E7 4C8B7F04
+
+B085E65E 2F5F5360 8489D422 FB8FC1AA
+
+93F6323C FD7F7544 3F39C318 D95E6480
+
+FCCC7561 8A4A1741 68FA4223 ADCEDE07
+
+200C25BE DBBC4855 C4CFB774 C5EC138C
+
+0FEC1CEF D9DCECEC D3A5DAD1 01316C36
+
+—— END LICENSE ——
