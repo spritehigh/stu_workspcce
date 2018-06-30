@@ -1,0 +1,28 @@
+ubuntu 安装go1.9.1
+一，从官网下载go源码
+
+对于64位的Linux
+ $ wget https://storage.googleapis.com/golang/go1.9.1.linux-amd64.tar.gz
+对于32位的Linux
+$ wget https://storage.googleapis.com/golang/go1.9.1.linux-386.tar.gz
+具体查看Go 的官网：https://golang.org/dl/
+
+在/usr/local下安装程序
+$ sudo tar -xzf go1.9.1.linux-amd64.tar.gz -C /usr/local
+配置全局变量
+$ sudo gedit ~/.bashrc
+
+在文件添加以下两行信息
+
+export GOPATH=/usr/local/go
+export PATH=$GOPATH/bin:$PATH
+
+使修改生效
+# source ~/.bashrc
+
+export GOROOT=/usr/local/go  
+export GOPATH=$PATH:$GOROOT/bin
+
+验证
+go version
+go version go1.9.1 linux/amd64
